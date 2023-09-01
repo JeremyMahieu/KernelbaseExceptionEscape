@@ -13,9 +13,7 @@ namespace KernelbaseExceptionEscape
         {
             try
             {
-                JsonElement jsonElement = JsonDocument.Parse("false").RootElement;
-                var res = (object)(Int64)(jsonElement).GetDouble();
-                Console.WriteLine(res);
+                throw new Exception();
             }
             catch (Exception e)
             {
